@@ -1,0 +1,21 @@
+{
+	"app_navbar": {
+		"logo_title": "My Amazing I18N Website"
+	},
+
+	"pages": {
+		"homepage": {
+			"title": "My Homepage",
+			"blog_cta": "Check My Amazing Blog"
+		},
+		"blogs_page": {
+			"title": "My Blogs"
+		}
+	},
+
+	"actions": {
+		"go_back_button": {
+			"text_content": "⬅ Go Back"
+		}
+	}
+}

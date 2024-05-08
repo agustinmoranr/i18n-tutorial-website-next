@@ -1,0 +1,21 @@
+{
+	"app_navbar": {
+		"logo_title": "Mí Increíble Sitio Web I18N"
+	},
+
+	"pages": {
+		"homepage": {
+			"title": "Mi Página de inicio",
+			"blog_cta": "Conoce mí blog"
+		},
+		"blogs_page": {
+			"title": "Mis Blogs"
+		}
+	},
+
+	"actions": {
+		"go_back_button": {
+			"text_content": "⬅ Volver"
+		}
+	}
+}
