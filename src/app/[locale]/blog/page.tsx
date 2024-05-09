@@ -23,7 +23,7 @@ export default async function BlogsPage({
 					{blogs_page.title}
 				</h1>
 
-				<ol className='space-y-4 mt-12'>
+				<ol className='space-y-4 mt-12 p-8'>
 					{!blogs && <span>Sin blogs</span>}
 					{blogs &&
 						blogs.data.map(({ attributes }) => (

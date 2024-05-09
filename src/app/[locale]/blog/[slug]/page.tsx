@@ -53,13 +53,13 @@ export default async function BlogPage({
 	const blog = blogResponse.attributes;
 	const { actions } = await getDictionary(locale);
 	return (
-		<div className='min-h-screen px-4 py-20 max-w-screen-md mx-auto'>
+		<div className='min-h-screen px-4 py-10 sm:py-20 max-w-screen-md mx-auto'>
 			<Link
 				href='/blog'
 				className='px-2 py-1 bg-zinc-700 text-white rounded-lg'>
 				{actions.go_back_button.text_content}
 			</Link>
-			<h1 className='text-5xl sm:text-7xl font-semibold text-center mt-10'>
+			<h1 className='text-5xl sm:text-7xl font-semibold text-center mt-20 sm:mt-40'>
 				{blog.title}
 			</h1>
 		</div>

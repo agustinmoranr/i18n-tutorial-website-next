@@ -7,7 +7,7 @@ import { getDictionary } from '@/app/[locale]/dictionaries';
 export async function Navbar({ locale }: { locale: LOCALES_LIST }) {
 	const { app_navbar } = await getDictionary(locale);
 	return (
-		<header className='max-w-screen-2xl h-36 mx-auto px-4'>
+		<header className='max-w-screen-2xl h-28 sm:h-36 mx-auto px-4'>
 			<nav className='h-full flex items-center justify-between'>
 				<Link
 					href={HOME_ROUTE}
