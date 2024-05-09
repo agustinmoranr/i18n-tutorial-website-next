@@ -5,6 +5,23 @@ import { LOCALES_LIST } from '@/types';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { getDictionary } from '../../dictionaries';
+import listBlogs from '@/service/listBlogs';
+
+export async function generateStaticParams({
+	params: { locale },
+}: {
+	params: { locale: LOCALES_LIST };
+}) {
+	const blogs = await listBlogs(locale);
+
+	const slugs =
+		blogs?.data.map((blog) => ({
+			slug: blog.attributes?.slug!,
+			locale,
+		})) ?? [];
+
+	return slugs;
+}
 
 export default async function BlogPage({
 	params: { locale, slug },
